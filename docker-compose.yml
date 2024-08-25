@@ -1,7 +1,8 @@
 version: '3'
 
 x-spark-common: &spark-common
-  image: bitnami/spark:latest
+#  image: bitnami/spark:latest
+  image: bitnami/spark:3.5.1-debian-12-r12
   volumes:
     - ./jobs:/opt/bitnami/spark/jobs
   networks:
